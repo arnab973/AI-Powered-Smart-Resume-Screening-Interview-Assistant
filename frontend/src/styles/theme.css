@@ -1,0 +1,120 @@
+
+:root {
+  /* ========================================
+     HireNexus Core Colors
+  ======================================== */
+
+  --hn-bg: #060914;
+  --hn-bg-secondary: #0a1020;
+  --hn-surface: #0d1426;
+  --hn-surface-light: #111a30;
+
+  --hn-text: #f8fafc;
+  --hn-text-secondary: #cbd5e1;
+  --hn-text-muted: #7f8da8;
+
+  --hn-primary: #6d5dfc;
+  --hn-primary-light: #8b7fff;
+
+  --hn-cyan: #22d3ee;
+  --hn-blue: #38bdf8;
+  --hn-violet: #a78bfa;
+
+  --hn-success: #34d399;
+  --hn-warning: #fbbf24;
+  --hn-danger: #fb7185;
+
+  /* ========================================
+     Borders & Glass
+  ======================================== */
+
+  --hn-border: rgba(148, 163, 184, 0.14);
+  --hn-border-light: rgba(148, 163, 184, 0.22);
+
+  --hn-glass: rgba(13, 20, 38, 0.62);
+  --hn-glass-strong: rgba(13, 20, 38, 0.82);
+
+  /* ========================================
+     Gradients
+  ======================================== */
+
+  --hn-gradient-primary: linear-gradient(
+    135deg,
+    #6d5dfc 0%,
+    #8b7fff 45%,
+    #22d3ee 100%
+  );
+
+  --hn-gradient-text: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #a78bfa 45%,
+    #22d3ee 100%
+  );
+
+  /* ========================================
+     Shadows
+  ======================================== */
+
+  --hn-shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.18);
+
+  --hn-shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  --hn-glow-primary:
+    0 0 35px rgba(109, 93, 252, 0.24);
+
+  --hn-glow-cyan:
+    0 0 35px rgba(34, 211, 238, 0.2);
+
+  /* ========================================
+     Radius
+  ======================================== */
+
+  --hn-radius-sm: 10px;
+  --hn-radius-md: 16px;
+  --hn-radius-lg: 24px;
+  --hn-radius-xl: 32px;
+}
+
+/* ========================================
+   Global HireNexus Utilities
+======================================== */
+
+.hn-glass {
+  background: var(--hn-glass);
+  border: 1px solid var(--hn-border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.hn-glass-strong {
+  background: var(--hn-glass-strong);
+  border: 1px solid var(--hn-border-light);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.hn-gradient-text {
+  background: var(--hn-gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hn-gradient-button {
+  background: var(--hn-gradient-primary);
+  color: white;
+  border: none;
+  box-shadow: var(--hn-glow-primary);
+}
+
+.hn-gradient-button:hover {
+  filter: brightness(1.08);
+}
+
+.hn-neon-border {
+  border: 1px solid rgba(109, 93, 252, 0.35);
+  box-shadow:
+    inset 0 0 20px rgba(109, 93, 252, 0.04),
+    0 0 25px rgba(109, 93, 252, 0.08);
+}

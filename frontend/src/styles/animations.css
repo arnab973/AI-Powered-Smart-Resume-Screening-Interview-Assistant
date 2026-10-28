@@ -1,0 +1,348 @@
+
+/* ============================================
+   HIRENEXUS GLOBAL ANIMATIONS
+============================================ */
+
+@keyframes hn-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes hn-float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
+@keyframes hn-pulse-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes hn-pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes hn-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes hn-scan {
+  0% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+}
+
+@keyframes hn-scan-horizontal {
+  0% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+}
+
+@keyframes hn-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes hn-border-pulse {
+  0%,
+  100% {
+    border-color: rgba(148, 163, 184, 0.08);
+  }
+
+  50% {
+    border-color: rgba(139, 127, 255, 0.28);
+  }
+}
+
+@keyframes hn-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hn-orbit-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hn-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hn-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hn-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hn-grid-move {
+  from {
+    background-position:
+      0 0,
+      0 0;
+  }
+
+  to {
+    background-position:
+      40px 40px,
+      40px 40px;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+============================================ */
+
+.hn-float {
+  animation: hn-float 5s ease-in-out infinite;
+}
+
+.hn-float-slow {
+  animation: hn-float-slow 7s ease-in-out infinite;
+}
+
+.hn-pulse-glow {
+  animation: hn-pulse-glow 4s ease-in-out infinite;
+}
+
+.hn-pulse-dot {
+  animation: hn-pulse-dot 2s ease-in-out infinite;
+}
+
+.hn-gradient-animation {
+  background-size: 200% 200%;
+  animation: hn-gradient-shift 8s ease infinite;
+}
+
+.hn-scan {
+  animation: hn-scan 4s ease-in-out infinite;
+}
+
+.hn-scan-horizontal {
+  animation: hn-scan-horizontal 5s ease-in-out infinite;
+}
+
+.hn-shimmer {
+  background-size: 200% 100%;
+  animation: hn-shimmer 3s linear infinite;
+}
+
+.hn-border-pulse {
+  animation: hn-border-pulse 3s ease-in-out infinite;
+}
+
+.hn-orbit {
+  animation: hn-orbit 18s linear infinite;
+}
+
+.hn-orbit-reverse {
+  animation: hn-orbit-reverse 24s linear infinite;
+}
+
+.hn-fade-up {
+  animation: hn-fade-up 0.8s ease-out both;
+}
+
+.hn-fade-in {
+  animation: hn-fade-in 0.8s ease-out both;
+}
+
+.hn-scale-in {
+  animation: hn-scale-in 0.7s ease-out both;
+}
+
+/* ============================================
+   ANIMATION DELAYS
+============================================ */
+
+.hn-delay-1 {
+  animation-delay: 100ms;
+}
+
+.hn-delay-2 {
+  animation-delay: 200ms;
+}
+
+.hn-delay-3 {
+  animation-delay: 300ms;
+}
+
+.hn-delay-4 {
+  animation-delay: 400ms;
+}
+
+.hn-delay-5 {
+  animation-delay: 500ms;
+}
+
+.hn-delay-6 {
+  animation-delay: 600ms;
+}
+
+/* ============================================
+   FUTURISTIC GRID
+============================================ */
+
+.hn-grid-background {
+  background-image:
+    linear-gradient(
+      rgba(148, 163, 184, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+
+  animation: hn-grid-move 18s linear infinite;
+}
+
+/* ============================================
+   MOBILE OPTIMIZATION
+============================================ */
+
+@media (max-width: 768px) {
+  .hn-float {
+    animation-duration: 6s;
+  }
+
+  .hn-float-slow {
+    animation-duration: 8s;
+  }
+
+  .hn-orbit {
+    animation-duration: 24s;
+  }
+
+  .hn-orbit-reverse {
+    animation-duration: 30s;
+  }
+
+  .hn-grid-background {
+    background-size: 30px 30px;
+    animation-duration: 24s;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
