@@ -49,6 +49,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://ai-powered-smart-resume-screening-i-omega.vercel.app",
+        "https://ai-powered-smart-resume-screening-interview-assistan-aq2il8r6c.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -68,8 +70,6 @@ app.include_router(interview_router)
 app.include_router(evaluation_router)
 app.include_router(report_router)
 app.include_router(application_router)
-
-# HR Settings
 app.include_router(hr_settings_router)
 
 
