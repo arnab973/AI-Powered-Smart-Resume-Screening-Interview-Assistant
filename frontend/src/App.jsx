@@ -32,7 +32,7 @@ import ResumeAnalysis from "./pages/candidate/ResumeAnalysis";
 import JobMatching from "./pages/candidate/JobMatching";
 import Interview from "./pages/candidate/Interview";
 import InterviewReport from "./pages/candidate/InterviewReport";
-import Profile from "./pages/candidate/Profile";
+import Profile from "./pages/candidate/profile";
 import Settings from "./pages/candidate/Settings";
 import MyApplications from "./pages/candidate/MyApplications";
 
