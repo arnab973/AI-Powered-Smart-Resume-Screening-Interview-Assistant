@@ -25,7 +25,7 @@ import {
 
 import GlobalNightSky from "../../components/landing/GlobalNightSky";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 function getToken() {
   return (
